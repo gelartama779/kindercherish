@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KinderCherish menyediakan worksheet dan learning resources untuk anak usia 1–7 tahun, dari Nursery hingga Kindergarten.">
+  <title>KinderCherish — Every Little Step Matters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo">
+    <img src="images/logo-navbar.png" alt="KinderCherish">
+</a>
+      <button class="menu-toggle" aria-label="Buka menu">☰</button>
+      <nav class="nav-links">
+        <a href="#curriculum">Curriculum</a>
+        <a href="#age">Find by Age</a>
+        <a href="#worksheets">Worksheets</a>
+        <a href="#tools">Learning Tools</a>
+        <a href="#tutoring">Private Counselling</a>
+        <a href="#about">About Us</a>
+        <a href="#worksheets" class="nav-button">Shop Worksheet</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Nursery • Preschool • Kindergarten</p>
+          <h1>Every little step <span>matters.</span></h1>
+          <p class="hero-text">
+            Learning resources yang dirancang untuk menemani perjalanan belajar anak usia
+            1–7 tahun dengan aktivitas yang menyenangkan, bermakna, dan sesuai tahap perkembangan.
+          </p>
+          <div class="hero-actions">
+            <a href="#worksheets" class="button primary">Explore Worksheets</a>
+            <a href="#age" class="button secondary">Find by Age</a>
+          </div>
+          <div class="trust-row">
+            <div>✓ Bahasa Indonesia & English</div>
+            <div>✓ Usia 1–7 Tahun</div>
+            <div>✓ Developed with Educators</div>
+          </div>
+        </div>
+        <div class="hero-art">
+
+  <div class="hero-illustration">
+    <img
+      src="images/hero-learning.png"
+      alt="Children learning and playing with colorful blocks"
+    >
+  </div>
+
+<!-- TEXT DIBAWAH HERO IMAGE DIEDIT DISINI -->
+  <div class="hero-message">
+    <h2>Learn <span>•</span> Play <span>•</span> Grow</h2>
+    <p>activities for little learners</p>
+  </div>
+
+</div>
+    </section>
+
+    <section id="curriculum" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Choose what fits your child</p>
+          <h2>Learning by Curriculum</h2>
+          <p>Pilih pendekatan belajar yang paling sesuai dengan kebutuhan dan lingkungan belajar anak.</p>
+        </div>
+        <div class="curriculum-grid">
+          <article class="curriculum-card">
+            <div class="icon">🇮🇩</div>
+            <h3>National</h3>
+            <p>Aktivitas belajar yang disesuaikan dengan konteks pembelajaran nasional.</p>
+          </article>
+          <article class="curriculum-card">
+            <div class="icon">✨</div>
+            <h3>National Plus</h3>
+            <p>Materi nasional dengan tambahan aktivitas dan enrichment untuk memperkaya pengalaman belajar.</p>
+          </article>
+          <article class="curriculum-card">
+            <div class="icon">🌎</div>
+            <h3>International</h3>
+            <p>Learning resources dengan materi berbahasa Inggris dan pendekatan pembelajaran yang lebih global.</p>
+          </article>
+          <article class="curriculum-card">
+            <div class="icon">🪴</div>
+            <h3>Montessori</h3>
+            <p>Aktivitas terinspirasi prinsip Montessori yang mendorong kemandirian dan hands-on learning.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="age" class="section soft-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Start with their stage</p>
+          <h2>Find Learning by Age</h2>
+          <p>Setiap usia memiliki kebutuhan perkembangan yang berbeda. Mulai dari tahap yang paling dekat dengan anak.</p>
+        </div>
+        <div class="age-grid">
+          <button class="age-card active" data-age="all"><strong>All</strong><span>1–7 Years</span></button>
+          <button class="age-card" data-age="1-2"><strong>1–2</strong><span>Sensory • Art • Motorik</span></button>
+          <button class="age-card" data-age="2-3"><strong>2–3</strong><span>Sensory • Art • Motorik</span></button>
+          <button class="age-card" data-age="3-4"><strong>3–4</strong><span>STEAM • Art • Motorik</span></button>
+          <button class="age-card" data-age="4-5"><strong>4–5</strong><span>Math • Language • STEAM</span></button>
+          <button class="age-card" data-age="5-6"><strong>5–6</strong><span>STEAM • Math • Language</span></button>
+          <button class="age-card" data-age="6-7"><strong>6–7</strong><span>School Readiness</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="worksheets" class="section">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Digital learning resources</p>
+            <h2>Featured Worksheets</h2>
+            <p>Pilih worksheet berdasarkan usia, curriculum, bahasa, dan area pembelajaran.</p>
+          </div>
+          <div class="filters">
+            <select id="curriculumFilter">
+              <option value="all">All Curriculum</option>
+              <option value="National">National</option>
+              <option value="National Plus">National Plus</option>
+              <option value="International">International</option>
+              <option value="Montessori">Montessori</option>
+            </select>
+            <select id="languageFilter">
+              <option value="all">All Language</option>
+              <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+              <option value="English">English</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="productGrid" class="product-grid">
+          <article class="product-card" data-age="4-5" data-curriculum="International" data-language="English">
+            <div class="product-image peach">🔢</div>
+            <div class="product-body">
+              <div class="tags"><span>4–5 Years</span><span>English</span></div>
+              <h3>Counting 1–20</h3>
+              <p>Aktivitas mengenal angka, menghitung objek, dan number recognition.</p>
+              <div class="product-meta"><span>Math</span><strong>Rp19.000</strong></div>
+              <button class="button primary full" onclick="buyProduct('Counting 1–20')">Buy Worksheet</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-age="3-4" data-curriculum="National" data-language="Bahasa Indonesia">
+            <div class="product-image green">🎨</div>
+            <div class="product-body">
+              <div class="tags"><span>3–4 Years</span><span>Bahasa Indonesia</span></div>
+              <h3>My First Colors</h3>
+              <p>Mengenal warna melalui matching, sorting, dan aktivitas sederhana.</p>
+              <div class="product-meta"><span>Art • Cognitive</span><strong>Rp15.000</strong></div>
+              <button class="button primary full" onclick="buyProduct('My First Colors')">Buy Worksheet</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-age="5-6" data-curriculum="National Plus" data-language="Bahasa Indonesia">
+            <div class="product-image blue">🧪</div>
+            <div class="product-body">
+              <div class="tags"><span>5–6 Years</span><span>Bahasa Indonesia</span></div>
+              <h3>Mini STEAM Challenge</h3>
+              <p>Aktivitas sederhana untuk melatih observasi, problem solving, dan kreativitas.</p>
+              <div class="product-meta"><span>STEAM</span><strong>Rp25.000</strong></div>
+              <button class="button primary full" onclick="buyProduct('Mini STEAM Challenge')">Buy Worksheet</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-age="6-7" data-curriculum="International" data-language="English">
+            <div class="product-image yellow">✏️</div>
+            <div class="product-body">
+              <div class="tags"><span>6–7 Years</span><span>English</span></div>
+              <h3>Ready for Big School</h3>
+              <p>Aktivitas reading, writing, logic, dan numeracy untuk school readiness.</p>
+              <div class="product-meta"><span>School Prep</span><strong>Rp29.000</strong></div>
+              <button class="button primary full" onclick="buyProduct('Ready for Big School')">Buy Worksheet</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-age="1-2" data-curriculum="Montessori" data-language="Bahasa Indonesia">
+            <div class="product-image lavender">🖐️</div>
+            <div class="product-body">
+              <div class="tags"><span>1–2 Years</span><span>Bahasa Indonesia</span></div>
+              <h3>Little Hands Activity</h3>
+              <p>Aktivitas awal untuk sensory exploration dan fine motor sederhana.</p>
+              <div class="product-meta"><span>Sensory • Motorik</span><strong>Rp15.000</strong></div>
+              <button class="button primary full" onclick="buyProduct('Little Hands Activity')">Buy Worksheet</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-age="2-3" data-curriculum="National Plus" data-language="English">
+            <div class="product-image peach">🐻</div>
+            <div class="product-body">
+              <div class="tags"><span>2–3 Years</span><span>English</span></div>
+              <h3>My First English Words</h3>
+              <p>Vocabulary sederhana melalui gambar, matching, dan aktivitas bermain.</p>
+              <div class="product-meta"><span>Language</span><strong>Rp17.000</strong></div>
+              <button class="button primary full" onclick="buyProduct('My First English Words')">Buy Worksheet</button>
+            </div>
+          </article>
+        </div>
+
+        <div id="emptyState" class="empty-state hidden">Belum ada worksheet yang sesuai dengan filter pilihan.</div>
+      </div>
+    </section>
+
+    <section id="tools" class="section soft-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Play with purpose</p>
+          <h2>Learning Tools</h2>
+          <p>Rekomendasi alat bermain dan belajar yang dapat membantu aktivitas anak di rumah.</p>
+        </div>
+        <div class="tools-grid">
+          <article class="tool-card">
+            <div class="tool-icon">🧩</div>
+            <div><h3>Montessori Number Puzzle</h3><p>Usia 3–5 • Math • Fine Motor</p></div>
+            <a href="#" onclick="showShopeeNotice(event)">Shop on Shopee →</a>
+          </article>
+          <article class="tool-card">
+            <div class="tool-icon">🌈</div>
+            <div><h3>Color Sorting Set</h3><p>Usia 2–4 • Cognitive • Motorik</p></div>
+            <a href="#" onclick="showShopeeNotice(event)">Shop on Shopee →</a>
+          </article>
+          <article class="tool-card">
+            <div class="tool-icon">🖍️</div>
+            <div><h3>Kids Art Starter Set</h3><p>Usia 2–6 • Art • Creativity</p></div>
+            <a href="#" onclick="showShopeeNotice(event)">Shop on Shopee →</a>
+          </article>
+          <article class="tool-card">
+            <div class="tool-icon">🔬</div>
+            <div><h3>Little STEAM Kit</h3><p>Usia 4–7 • STEAM • Problem Solving</p></div>
+            <a href="#" onclick="showShopeeNotice(event)">Shop on Shopee →</a>
+          </article>
+        </div>
+        <p class="affiliate-note">* Link rekomendasi dapat berupa affiliate link. Harga dan ketersediaan mengikuti toko/marketplace.</p>
+      </div>
+    </section>
+
+    <section id="tutoring" class="section">
+      <div class="container tutoring-box">
+        <div class="tutoring-copy">
+          <p class="eyebrow">Personal learning support</p>
+          <h2>Belajar bersama, tumbuh bersama.</h2>
+          <p>
+            Temani proses belajar anak dengan bimbingan online melalui Zoom.
+            Materi dapat disesuaikan dengan usia dan kebutuhan belajar anak.
+          </p>
+          <ul>
+            <li>✓ Sesi 1-on-1</li>
+            <li>✓ Materi sesuai usia</li>
+            <li>✓ Worksheet pendukung</li>
+            <li>✓ Feedback untuk parents</li>
+          </ul>
+          <a href="#contact" class="button primary">Daftar Trial</a>
+        </div>
+        <div class="pricing-card">
+          <span class="popular">Trial</span>
+          <div class="price">Rp25.000 <small>/ 30 min</small></div>
+          <p>Contoh harga — dapat diubah sesuai paket KinderCherish.</p>
+          <hr>
+          <div class="price-small">Regular</div>
+          <strong>Rp150.000 / 4 sessions</strong>
+          <div class="price-small">Intensive</div>
+          <strong>Rp300.000 / 8 sessions</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section soft-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Why KinderCherish?</p>
+          <h2>Designed with care, made for little learners.</h2>
+        </div>
+        <div class="why-grid">
+          <article><span>01</span><h3>Age Appropriate</h3><p>Aktivitas disusun berdasarkan tahap usia dan kebutuhan perkembangan anak.</p></article>
+          <article><span>02</span><h3>Curriculum Choices</h3><p>Pilihan National, National Plus, International, dan Montessori.</p></article>
+          <article><span>03</span><h3>Bilingual Resources</h3><p>Materi tersedia dalam Bahasa Indonesia dan English.</p></article>
+          <article><span>04</span><h3>With Educators</h3><p>Dikembangkan bersama pendidik anak usia dini dengan pengalaman mengajar lebih dari 4 tahun.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="freebies" class="section">
+      <div class="container freebie-box">
+        <div><p class="eyebrow">A little gift for you</p><h2>Try a free worksheet.</h2><p>Mulai dari aktivitas sederhana yang bisa dilakukan bersama anak di rumah.</p></div>
+        <a href="#" class="button secondary" onclick="showFreebieNotice(event)">Get Free Worksheet</a>
+      </div>
+    </section>
+
+    <section id="blog" class="section soft-section">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div><p class="eyebrow">For parents</p><h2>Little Notes for Big Growth</h2></div>
+          <a href="#" class="text-link" onclick="showBlogNotice(event)">View all articles →</a>
+        </div>
+        <div class="article-grid">
+          <article><span>Fine Motor</span><h3>5 Aktivitas Sederhana untuk Melatih Fine Motor</h3><p>Ide aktivitas yang mudah dilakukan di rumah.</p></article>
+          <article><span>Parenting</span><h3>Cara Membuat Rutinitas Belajar yang Menyenangkan</h3><p>Belajar tanpa membuat anak merasa tertekan.</p></article>
+          <article><span>School Readiness</span><h3>Apakah Anak Sudah Siap Masuk Sekolah?</h3><p>Hal-hal yang dapat mulai dikenalkan sejak dini.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-box">
+        <div>
+          <p class="eyebrow">Let's grow together</p>
+          <h2>Have a question?</h2>
+          <p>Hubungi KinderCherish untuk informasi worksheet, rekomendasi learning tools, atau bimbingan Zoom.</p>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:hello@kindercherish.com" class="button primary">Email Us</a>
+          <a href="#" class="button secondary" onclick="showContactNotice(event)">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a href="#home" class="logo">🌱 KinderCherish</a><p>Every little step matters.</p></div>
+      <div><h4>Explore</h4><a href="#curriculum">Curriculum</a><a href="#age">Find by Age</a><a href="#worksheets">Worksheets</a></div>
+      <div><h4>Support</h4><a href="#tools">Learning Tools</a><a href="#tutoring">Bimbingan</a><a href="#contact">Contact</a></div>
+      <div><h4>Languages</h4><p>Bahasa Indonesia</p><p>English</p></div>
+    </div>
+    <div class="container copyright">© 2026 KinderCherish. All rights reserved.</div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
